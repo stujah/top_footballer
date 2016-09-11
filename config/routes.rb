@@ -1,4 +1,6 @@
 TopFootballer::Application.routes.draw do
+  match '/' => 'top_footballers#index'
+  resources :top_footballers
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
